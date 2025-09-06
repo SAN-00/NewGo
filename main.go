@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	dns := "user=abhishiktha password @tcp(localhost(127.0.0.1)dbname?parseTime=true"
+	dns := "user=abhishiktha password@tcp(127.0.0.1)dbname?parseTime=true"
 
 	db, err := sql.Open("mysql", dns)
 	if err != nil {
